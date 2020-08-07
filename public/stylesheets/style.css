@@ -1,8 +1,93 @@
 body {
-  padding: 2rem;
-  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
+  font: 1em Arial, Helvetica, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+#homepagefirstdiv{
+  background-color: #C4C4C4;
+  width: 100vw;
+  height: 100vh;
+  
+}
+#homepageseconddiv{
+  background-color: #333333;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  
+}
+#homepagethirddiv{
+  background-color: #C4C4C4;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 50vh 10vh 5vh;
+  
+}
+.information{
+  background-color: #FFFFFF;
+  display: inline-block;
+  margin: 5vh 8vh 5vh 8vh;
+  text-align: center;
+  font-size: 1em;
+  padding-top: 40%;
+  
+  
+}
+.informationTitle{
+  font-size: 2em;
+
+}
+#title{
+ 
+  font-size: 6em;
+  padding-top: 30vh;
+  padding-left: 70vw;
+}
+#titleThirdPage{
+ 
+  font-size: 4em;
+  padding-top: 30vh;
+  padding-left: 2vw;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+#thirdPageDescription{
+  padding-left: 2vw;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+#thirdPageButton{
+  margin-left: 2vw;
+  width: 15%;
+  
+  border-radius: 50px;
+  padding: 4px 40px 4px 40px;
+  background: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+
+#titlePageDescription{
+  padding-left: 70vw;
+}
+
+
+#titlePageButton{
+  margin-left: 70vw;
+  border-radius: 50px;
+  padding: 4px 40px 4px 40px;
+  background: #FFFFFF;
+  border-color: #FFFFFF;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  
 }
