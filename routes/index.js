@@ -6,4 +6,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/signup', (req, res) => {
+  res.render()
+})
+
+'http://localhost:3000/'
+
 module.exports = router;
