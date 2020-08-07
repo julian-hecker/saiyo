@@ -6,8 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/signup', (req, res) => {
-  res.render()
+router.get('/form', (req, res) => {
+  res.render('form')
 })
 
 'http://localhost:3000/'
