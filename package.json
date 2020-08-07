@@ -1,0 +1,23 @@
+{
+    "name": "saiyo",
+    "version": "1.0.0",
+    "description": "turn your resume into a website",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/julian-hecker/saiyo.git"
+    },
+    "author": "Julian Hecker, Scott Simko",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/julian-hecker/saiyo/issues"
+    },
+    "homepage": "https://github.com/julian-hecker/saiyo#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
