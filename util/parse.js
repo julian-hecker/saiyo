@@ -1,12 +1,28 @@
 const fs = require('fs');
 const pdf = require('pdf-parse');
+const ResumeParser = require('simple-resume-parser');
+const resume = new ResumeParser('./resume.txt');
 
-// let dataBuffer = fs.readFileSync('./Hecker_Resume___Aug_2020.pdf');
-// let dataBuffer = fs.readFileSync('./Ian Matlak Resume.pdf');
-// let dataBuffer = fs.readFileSync('./Ian_Resume.pdf');
-let dataBuffer = fs.readFileSync('./Scott_Simko_Resume.pdf');
+// read PDF file
+let dataBuffer = fs.readFileSync('./RESUME PDF FILE HERE');
 
+// write text from PDF to .txt file
 pdf(dataBuffer).then(function (data) {
+  let temp = data.text;
+
+  fs.writeFile('./joshu.txt', data.text, () => {
+    console.log('file written');
+  });
+
+  resume
+    .parseToJSON()
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+
   // // number of pages
   // console.log(data.numpages);
   // // number of rendered pages
@@ -21,35 +37,36 @@ pdf(dataBuffer).then(function (data) {
   // //  PDF text
   // console.log(data.text);
 
-  let temp = data.text;
-  arrayTemp = temp.replace(/(\n)/g, ';').split(';');
+  //   arrayTemp = temp.replace(/(\n)/g, ';').split(';');
 
-  arraydel = [];
+  //   arraydel = [];
 
-  for (i = 0; i < arrayTemp.length; i++) {
-    if (arrayTemp[i].replace(/\s/g, '') === '' || arrayTemp[i] === '') {
-      arraydel.push(i);
-    }
-  }
+  //    // push index with whitespace on delete array
+  //   for (i = 0; i < arrayTemp.length; i++) {
+  //     if (arrayTemp[i].replace(/\s/g, '') === '' || arrayTemp[i] === '') {
+  //       arraydel.push(i);
+  //     }
+  //   }
+  //    // delete each index with whitespace
+  //   for (i = 0; i < arraydel.length; i++) {
+  //     arrayTemp.splice(arraydel[i] - i, 1);
+  //   }
 
-  for (i = 0; i < arraydel.length; i++) {
-    arrayTemp.splice(arraydel[i] - i, 1);
-  }
+  //   let obj = {
+  //     Name: '',
+  //     Experience: '',
+  //     date: '',
+  //     desc: '',
+  //   };
+  //   console.log(arrayTemp);
 
-  let obj = {
-    Name: '',
-    Experience: '',
-    date: '',
-    desc: '',
-  };
-  console.log(arrayTemp);
-
-  for (i = 0; i < arrayTemp.length; i++) {
-    if (obj.Name === '' && i == 0) obj.Name = arrayTemp[i];
-    if (arrayTemp[i].match(/\w+(?=\s+EXPERIENCE)/gi) && obj.Experience === '') {
-      obj.Experience = arrayTemp[i + 1];
-      obj.desc = arrayTemp[i + 2];
-    }
-  }
-  console.log(obj);
+  //   // finds index with 2nd word == EXPERIENCE insensitive
+  //   for (i = 0; i < arrayTemp.length; i++) {
+  //     if (obj.Name === '' && i == 0) obj.Name = arrayTemp[i];
+  //     if (arrayTemp[i].match(/\w+(?=\s+EXPERIENCE)/gi) && obj.Experience === '') {
+  //       obj.Experience = arrayTemp[i + 1];
+  //       obj.desc = arrayTemp[i + 2];
+  //     }
+  //   }
+  //   console.log(obj);
 });
