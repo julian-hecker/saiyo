@@ -13,7 +13,8 @@
         "express-handlebars": "^5.1.0",
         "handlebars": "^4.7.6",
         "http-errors": "~1.6.3",
-        "morgan": "~1.9.1"
+        "morgan": "~1.9.1",
+        "pdf-parse": "^1.1.1"
     },
     "devDependencies": {
         "nodemon": "^2.0.4"
