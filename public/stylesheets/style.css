@@ -1,93 +1,154 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-  
-  font: 1em Arial, Helvetica, sans-serif;
+    margin: 0;
+    font: 1em Arial, Helvetica, sans-serif;
 }
 
-a {
-  color: #00B7FF;
-}
-#homepagefirstdiv{
-  background-color: #C4C4C4;
-  width: 100vw;
-  height: 100vh;
-  
-}
-#homepageseconddiv{
-  background-color: #333333;
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  
-  
-}
-#homepagethirddiv{
-  background-color: #C4C4C4;
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 50vh 10vh 5vh;
-  
-}
-.information{
-  background-color: #FFFFFF;
-  display: inline-block;
-  margin: 5vh 8vh 5vh 8vh;
-  text-align: center;
-  font-size: 1em;
-  padding-top: 40%;
-  
-  
-}
-.informationTitle{
-  font-size: 2em;
-
-}
-#title{
- 
-  font-size: 6em;
-  padding-top: 30vh;
-  padding-left: 70vw;
-}
-#titleThirdPage{
- 
-  font-size: 4em;
-  padding-top: 30vh;
-  padding-left: 2vw;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-}
-#thirdPageDescription{
-  padding-left: 2vw;
-  margin-top: 0px;
-  padding-top: 0px;
+html,
+body {
+    height: 100%;
 }
 
-#thirdPageButton{
-  margin-left: 2vw;
-  width: 15%;
-  
-  border-radius: 50px;
-  padding: 4px 40px 4px 40px;
-  background: #FFFFFF;
-  border-color: #FFFFFF;
+/* a {
+    color: #00b7ff;
+} */
+
+#homepagefirstdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 2em;
+    min-height: 100vh;
+    background-color: rgb(2, 0, 36);
+    background: linear-gradient(
+        45deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(9, 9, 121, 1) 40%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    color: white;
+    font-size: 2em;
+    text-align: right;
 }
 
-
-#titlePageDescription{
-  padding-left: 70vw;
+#homepagefirstdiv > * + * {
+    margin-top: 1rem;
 }
 
-
-#titlePageButton{
-  margin-left: 70vw;
-  border-radius: 50px;
-  padding: 4px 40px 4px 40px;
-  background: #FFFFFF;
-  border-color: #FFFFFF;
+#title {
+    font-size: 6em;
+    font-weight: bold;
 }
-*{
-  margin: 0px;
-  padding: 0px;
-  
+
+#titlePageButton {
+    padding: 0.5rem 2rem;
+    min-width: 50vw;
+    background-color: white;
+    border: none;
+    border-radius: 10rem;
+    color: rgb(2, 0, 36);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    #homepagefirstdiv {
+        font-size: 1em;
+    }
+}
+
+#homepageseconddiv {
+    display: grid;
+    grid-gap: 2rem;
+    padding: 2em;
+    font-size: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+}
+
+.information {
+    padding: 1.5em;
+    background-color: #ffffff;
+    display: inline-block;
+    text-align: center;
+}
+
+.information .number {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.informationTitle {
+    font-size: 2em;
+}
+
+@media (max-width: 900px) {
+    #homepageseconddiv {
+        grid-template-columns: 1fr;
+        font-size: 1em;
+    }
+}
+
+#homepagethirddiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2em;
+    background-color: rgb(2, 0, 36);
+    background: linear-gradient(
+        -135deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(9, 9, 121, 1) 40%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    color: white;
+    font-size: 2em;
+}
+
+#homepagethirddiv > * + * {
+    margin-top: 1rem;
+}
+
+#titleThirdPage {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#thirdPageButton {
+    padding: 0.5rem 2rem;
+    min-width: 50vw;
+    background-color: white;
+    border: none;
+    border-radius: 10rem;
+    color: rgb(2, 0, 36);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    #homepagethirddiv {
+        font-size: 1em;
+    }
+    #titleThirdPage {
+        font-size: 3em;
+    }
 }
