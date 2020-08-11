@@ -152,3 +152,36 @@ body {
         font-size: 3em;
     }
 }
+
+.form-page {
+    position: relative;
+    padding: 2em;
+    min-height: 100%;
+    background-color: rgb(2, 0, 36);
+    background: linear-gradient(
+        -135deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(9, 9, 121, 1) 40%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    color: white;
+}
+
+.form-page section {
+    /* position: absolute; */
+    margin: 2em;
+    padding: 2em;
+    background-color: white;
+    color: rgb(2, 0, 36);
+    text-align: center;
+}
+
+.form-page h2 {
+    font-size: 2em;
+}
+
+.form-page #resume-input {
+    height: 200px;
+    width: 200px;
+    background-color: grey;
+}
