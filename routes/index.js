@@ -18,9 +18,9 @@ router.post('/upload', upload(), (req, res) => {
     // https://www.npmjs.com/package/express-fileupload
     pdf(req.files.resume).then(function (data) {
         // console.log(Object.entries(data));
-        fs.writeFileSync('../temp/resume.txt', data.text, () => {
-            console.log('file written');
-        });
+        // fs.writeFileSync('../temp/resume.txt', data.text, () => {
+        //     console.log('file written');
+        // });
 
         resume
             .parseToJSON()

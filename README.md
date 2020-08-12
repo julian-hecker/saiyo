@@ -16,6 +16,12 @@ Click on either of the "Start now" buttons on the homepage. The user will then b
 
 ## Links to working solution 
 - Check out the project [live on Heroku](https://saiyo.herokuapp.com) - Browse our [source code on GitHub](https://github.com/julian-hecker/saiyo).
+- Download the project on your local machine
+    1. `git clone https://github.com/julian-hecker/saiyo`
+    2. `cd saiyo`
+    3. `npm install`
+    4. `npm run dev`
+    5. Finally open http://localhost:3000/ and try it out! 
 
 ## Technologies used
 We made the app using Node.js, Express, Handlebars, and HTML/CSS. You can upload PDF files to the Node/Express server, the PDF is parsed, and Handlebars compiles the data into an HTML file, ready to deploy anywhere!
