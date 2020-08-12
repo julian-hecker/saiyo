@@ -102,6 +102,9 @@ body {
         grid-template-columns: 1fr;
         font-size: 1em;
     }
+    .resumedatadisplay{
+        grid-template-columns: 1fr;
+    }
 }
 
 #homepagethirddiv {
@@ -167,7 +170,43 @@ body {
     color: white;
     font-size: 1.5em;
 }
-
+#personalinfo{
+    margin-top: 1vh;
+    background-color: white;
+    color: black;
+    
+}
+.resumedatadisplay{
+    margin-top: 1vh;
+    
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    
+    
+    
+    
+}
+#personalinfo p{
+    min-width: 10vw;
+}
+#personalinfo *{
+    display: inline-block;
+}
+.informationbox{
+    margin-top: 1vh;
+    background-color: white;
+    color: black;
+    width: 100%;
+    
+}
+.informationboxform{
+    min-height: 20vh;
+    width: 90%;
+    justify-content: center;
+    
+}
 .form-page section {
     padding: 2em;
     background-color: white;

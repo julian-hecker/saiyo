@@ -3,6 +3,8 @@ const router = express.Router();
 
 const upload = require('express-fileupload');
 
+var JSONobj = require('../util/parse.js')
+
 router.get('/', function (req, res, next) {
     return res.render('index');
 });
