@@ -4,7 +4,7 @@ const fs = require('fs');
 const upload = require('express-fileupload');
 const pdf = require('pdf-parse');
 const ResumeParser = require('simple-resume-parser');
-const resume = new ResumeParser('../temp/resume.txt');
+const resume = new ResumeParser('/tmp/resume.txt');
 
 router.get('/', (req, res) => {
     return res.render('index');
@@ -18,8 +18,7 @@ router.post('/upload', upload(), (req, res) => {
     // https://www.npmjs.com/package/express-fileupload
     pdf(req.files.resume).then(function (data) {
         // console.log(Object.entries(data));
-        fs.mkdirSync('../temp');
-        fs.writeFileSync('../temp/resume.txt', data.text, () => {
+        fs.writeFileSync('/tmp/resume.txt', data.text, () => {
             console.log('file written');
         });
 
