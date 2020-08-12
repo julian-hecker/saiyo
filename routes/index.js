@@ -5,8 +5,13 @@ router.get('/', function (req, res, next) {
     return res.render('index');
 });
 
-router.get('/form', (req, res) => {
-    return res.render('form');
+router.get('/upload', (req, res) => {
+    return res.render('upload');
+});
+
+router.post('/form', (req, res) => {
+    console.log('reee');
+    res.end();
 });
 
 router.get('/preview/:template', (req, res) => {

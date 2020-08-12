@@ -165,23 +165,41 @@ body {
         rgba(0, 212, 255, 1) 100%
     );
     color: white;
+    font-size: 1.5em;
 }
 
 .form-page section {
-    /* position: absolute; */
-    margin: 2em;
     padding: 2em;
     background-color: white;
     color: rgb(2, 0, 36);
     text-align: center;
 }
 
+.form-page section * + * {
+    margin-top: 0.5em;
+}
+
 .form-page h2 {
     font-size: 2em;
 }
 
-.form-page #resume-input {
-    height: 200px;
-    width: 200px;
-    background-color: grey;
+#resume-submit,
+#resume-input {
+    font-size: inherit;
+}
+
+::-webkit-file-upload-button,
+#resume-submit {
+    display: inline-block;
+    padding: 0.5em 2em;
+    border: none;
+    font-weight: bold;
+}
+
+#resume-input:valid {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#resume-input:invalid {
+    background-color: rgba(255, 0, 0, 0.1);
 }
