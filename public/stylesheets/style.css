@@ -286,3 +286,49 @@ body {
     color: white;
     font-size: 1.5em;
 }
+#template-selection {
+    display: grid;
+    grid-gap: 2rem;
+    padding: 2em;
+    font-size: 2rem;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+}
+@media (max-width: 900px) {
+    #template-selection {
+        grid-template-columns: 1fr;
+        font-size: 1em;
+    }
+    
+}
+.selectTemplate{
+    border-radius: 2px;
+    border-color: blue;
+    border-style: solid;
+    color: black;
+    display: flex;
+    
+}
+
+
+.previewbutton{
+    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); 
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 15%;
+}
+.downloadbutton{
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 15%;
+    background-image: linear-gradient(rgb(28, 110, 164) 0%, rgb(20, 78, 117) 100%);
+    
+    border-color:blue;
+}
+.templatedescriptiontext{
+    font-size: 16px;
+}
+.TemplatePhoto{
+    width: 354px;
+    height: 219px;
+}
