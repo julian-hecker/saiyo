@@ -102,7 +102,7 @@ body {
         grid-template-columns: 1fr;
         font-size: 1em;
     }
-    .resumedatadisplay{
+    .resumedatadisplay {
         grid-template-columns: 1fr;
     }
 }
@@ -171,43 +171,34 @@ body {
     font-size: 1.5em;
 }
 
-
-
-#personalinfo{
+#personalinfo {
     margin-top: 1vh;
     background-color: white;
     color: black;
-    
 }
-.resumedatadisplay{
+.resumedatadisplay {
     margin-top: 1vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    
 }
-#personalinfo p{
+#personalinfo p {
     min-width: 10vw;
 }
-#personalinfo *{
+#personalinfo * {
     display: inline-block;
 }
-.informationbox{
+.informationbox {
     margin-top: 1vh;
     background-color: white;
     color: black;
     width: 100%;
-    
 }
-.informationboxform{
+.informationboxform {
     min-height: 20vh;
     width: 90%;
     justify-content: center;
-    
 }
-
-
-
 
 .form-page section {
     padding: 2em;
@@ -262,7 +253,7 @@ body {
     margin-top: 1rem;
 }
 
-.verify-form-section {}
+/* .verify-form-section {} */
 
 .verify-form-section label {
     display: block;
@@ -290,45 +281,53 @@ body {
     display: grid;
     grid-gap: 2rem;
     padding: 2em;
-    font-size: 2rem;
+    font-size: 1.5rem;
     grid-template-columns: 1fr 1fr;
     background-color: white;
 }
 @media (max-width: 900px) {
     #template-selection {
         grid-template-columns: 1fr;
-        font-size: 1em;
+        font-size: 0.75em;
     }
-    
 }
-.selectTemplate{
+.selectTemplate {
     border-radius: 2px;
     border-color: blue;
     border-style: solid;
     color: black;
     display: flex;
-    
 }
 
-
-.previewbutton{
-    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); 
+.previewbutton {
+    display: inline-block;
+    padding: 0.5em;
+    background-image: linear-gradient(
+        to right,
+        rgb(28, 110, 164) 0%,
+        rgb(35, 136, 203) 50%,
+        rgb(20, 78, 117) 100%
+    );
     color: rgb(255, 255, 255);
-    padding: 5px;
-    border-radius: 15%;
+    border-radius: 100px;
+    text-decoration: none;
 }
-.downloadbutton{
+.downloadbutton {
+    display: inline-block;
+    padding: 0.5em;
     color: rgb(255, 255, 255);
-    padding: 5px;
-    border-radius: 15%;
-    background-image: linear-gradient(rgb(28, 110, 164) 0%, rgb(20, 78, 117) 100%);
-    
-    border-color:blue;
+    border-radius: 100px;
+    background-image: linear-gradient(
+        rgb(28, 110, 164) 0%,
+        rgb(20, 78, 117) 100%
+    );
+    border-color: blue;
+    text-decoration: none;
 }
-.templatedescriptiontext{
+.templatedescriptiontext {
     font-size: 16px;
 }
-.TemplatePhoto{
+.TemplatePhoto {
     width: 354px;
     height: 219px;
 }

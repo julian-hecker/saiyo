@@ -12,20 +12,37 @@
             <div class="TemplatePhoto"><img src="templateone.png"></div>
             <div id="templateOneContent">
                 <h3>Template One</h3>
-                <p class="templatedescriptiontext">This template is a black and one page with descriptions and...</p>
-                <button type="button" class="previewbutton">Preview</button>
-                <button type="button" class="downloadbutton">Download</button>
+                <p class="templatedescriptiontext">Back to basics with the traditional resume look. Simple, no colors, just your resume on a site!</p>
+                <a href="/preview/1" type="button" class="previewbutton">Preview</a>
+                <a href="/download/1" type="button" class="downloadbutton">Download</a>
             </div>
         </div>
         <div class="selectTemplate">
             <div class="TemplatePhoto"><img src="templatetwo.png"></div>
             <div id="templateTwoContent">
                 <h3>Template Two</h3>
-                <p class="templatedescriptiontext">This template a great portfolio for web developers...</p>
-                <button type="button" class="previewbutton">Preview</button>
-                <button type="button" class="downloadbutton">Download</button>
+                <p class="templatedescriptiontext">A little bit more modern, maybe this one is to your tastes!</p>
+                <a href="/preview/2" type="button" class="previewbutton">Preview</a>
+                <a href="/download/2" type="button" class="downloadbutton">Download</a>
             </div>
         </div>
     </div>
 
 </div>
+
+
+<script>
+    const query = window.location.search;
+
+    document.querySelectorAll('.downloadbutton').forEach(button => {
+        button.addEventListener('click', (ev) => {
+            ev.target.href += query;
+        })
+    })
+
+    document.querySelectorAll('.previewbutton').forEach(button => {
+        button.addEventListener('click', (ev) => {
+            ev.target.href += query;
+        });
+    });
+</script>

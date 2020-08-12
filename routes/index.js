@@ -6,7 +6,7 @@ const pdf = require('pdf-parse');
 const ResumeParser = require('simple-resume-parser');
 const resume = new ResumeParser('../temp/resume.txt');
 
-router.get('/', function (req, res, next) {
+router.get('/', (req, res) => {
     return res.render('index');
 });
 
@@ -16,9 +16,8 @@ router.get('/upload', (req, res) => {
 
 router.post('/upload', upload(), (req, res) => {
     // https://www.npmjs.com/package/express-fileupload
-    //   req.files.resume
     pdf(req.files.resume).then(function (data) {
-        console.log(Object.entries(data));
+        // console.log(Object.entries(data));
         fs.writeFileSync('../temp/resume.txt', data.text, () => {
             console.log('file written');
         });
@@ -37,21 +36,20 @@ router.post('/upload', upload(), (req, res) => {
 });
 
 // post with query params, render select
-router.post('/verify', (req, res) => {
-    console.log(req.query, req.body, req.params);
-    return res.render('select');
-})
-
+router.get('/verify', (req, res) => {
+    return res.render('select', req.query);
+});
 
 router.get('/preview/:template', (req, res) => {
+    console.log(req.query);
     const template = 'template' + req.params.template;
-    return res.sendFile(compileResume(template, { title: 'reee' }));
+    return res.sendFile(compileResume(template, { data: req.query }));
 });
 
 router.get('/download/:template', (req, res) => {
     const template = 'template' + req.params.template;
     return res.download(
-        compileResume(template, { title: 'reee' }),
+        compileResume(template, { data: req.query }),
         'index.html',
     );
 });

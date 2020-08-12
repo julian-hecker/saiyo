@@ -7,12 +7,12 @@
         <p>This is the information that will go in your web page!</p>
     </section>
 
-    <form class="verify-form" action="/verify" method="POST">
+    <form class="verify-form" action="/verify" method="GET">
 
         {{#each data}}
         <div class="verify-form-section">
             <strong><label for="{{@key}}-input">{{@key}}</label></strong>
-            <textarea id="{{@key}}-input" type="text" class="verify-form-input">{{this}}</textarea>
+            <textarea id="{{@key}}-input" type="text" name="{{@key}}" class="verify-form-input">{{this}}</textarea>
         </div>
         {{/each}}
         <input class="verify-confirm" type="submit" value="Generate Website!">

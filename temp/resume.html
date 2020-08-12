@@ -1,158 +1,128 @@
-<style>
-    * {
-        box-sizing: border-box;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    html {
-        height: 100%;
-        max-width: 100%;
-    }
+section {
+    padding: 2em;
+}
 
-    body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        transform-style: preserve-3d;
-        background-color: rgb(0, 0, 0);
-    }
+section:nth-child(2n-1) {
+    background-color: black;
+    color: white;
+}
 
-    .page {
-        margin: 0;
-        padding: 0;
-
-        height: 100%;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        font-family: arial, helvetica-serif;
-        color: black;
-        background: none;
-    }
-
-    h1 {
-        font-size: 2.5em;
-        line-height: 1.2em;
-    }
-
-    p {
-        font-size: 1.2em;
-    }
-
-    .center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-
-
-    a:hover {
-        color: rgb(0, 116, 217);
-    }
-
-    .photo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    #headshot {
-        width: 250px;
-        padding: 0.5em;
-        margin-bottom: -3em;
-        border-radius: 0%;
-        background: rgb(0, 0, 0);
-        box-shadow: .5em .5em .5em rgba(0, 0, 0, 0.24);
-    }
-
-    .content {
-        width: 50vw;
-        max-width: 50vw;
-        padding: 1.5em 2em;
-        margin: 0 auto;
-        background: rgba(255, 255, 255, 0.75);
-        box-shadow: .5em .5em .5em rgba(0, 0, 0, .4);
-        border-color: black;
-        border-style: solid;
-        border-width: 2px;
-    }
-
-    .section {
-        position: relative;
-        padding: 10vh 2vw 10vh 2vw;
-        min-height: 50%;
-        max-width: 100vw;
-
-    }
-
-
-
-
-    #pageone {
-        background-color: white;
-        grid-template-columns: 1fr 2fr;
-        display: grid;
-        align-items: flex-start;
-
-    }
-
-    #pagetwo {
-        background-color: black;
-        color: black;
-
-        min-height: 30vh;
-        padding: 20px 20px 20px 20px;
-    }
-
-    #imagebox {
-        background-color: white;
-        grid-template-columns: 1fr 1fr 1fr;
-        display: grid;
-
-
-        align-items: center;
-        justify-items: center;
-        text-align: center;
-
-    }
-
-    .portfolioimagebox {
-        padding: 25px;
-        margin: 25px;
-    }
-</style>
-
-<div class="page">
-    <div id="pageone" class="section">
-        <div class="photo">
-            <img id="headshot" src="profilephoto.png">
-        </div>
-        <div class="content">
-            <h1>Placeholder Name</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <h3>john@gmail.com 555-555-5555</h3>
-
-
-        </div>
-    </div>
-    <div id="pagetwo" class="section">
-        <div id="imagebox">
-            <div class="portfolioimagebox">
-                <h3>Image 1</h3><br />
-                <img src="blueimage.png">
-            </div>
-            <div class="portfolioimagebox">
-                <h3>Image 1</h3><br />
-                <img src="greenimage.png">
-            </div>
-            <div class="portfolioimagebox">
-                <h3>Image 1</h3><br />
-                <img src="redimage.png">
-            </div>
-        </div>>
-
-
-    </div>
-
-</div>
+    </style>
+</head>
+<body>
+    <section>
+        <h2>name</h2>
+        <p>Julian Hecker</p>
+    </section>
+    <section>
+        <h2>email</h2>
+        <p>julianheckerdev@gmail.com</p>
+    </section>
+    <section>
+        <h2>phone</h2>
+        <p>516-974-8454</p>
+    </section>
+    <section>
+        <h2>summary</h2>
+        <p>--&gt;
+Lifelong learner looking to teach others and find a fulfilling career
+in web development. Passionate about programming and will learn
+whatever comes my way.
+&lt;!-- Skills --&gt;
+JavaScript, React, Node HTML5, SCSS, Git Figma, Adobe XD
+Customer Service, Sales Project Management Bilingual Spanish
+&lt;!-- Education --&gt;
+Bachelor of Computer Programming
+Farmingdale State College
+GPA 3.9; Aug 2019 - May 2021
+Founder of Tech Club
+Associate of Business Management
+Nassau Community College
+GPA 3.6; Aug 2017 - May 2019
+Dean&#x27;s List, Cum Laude
+&lt;!-- Experience --&gt;
+Web Development Instructor
+Nucamp, New York NY (July 2020 - Present)
+Guide students in learning frontend web development.
+Web Developer / Designer
+Probe Point Media, Farmingdale NY (Nov 2019 - April 2020 (COVID-19))
+Collaborate with developers and designers to create client sites
+Sales Specialist
+Casper Sleep, Huntington NY (Nov 2017 - Sept 2019)
+Communicate with customers to generate high-ticket sales</p>
+    </section>
+    <section>
+        <h2>skills</h2>
+        <p>--&gt;
+JavaScript, React, Node HTML5, SCSS, Git Figma, Adobe XD
+Customer Service, Sales Project Management Bilingual Spanish
+&lt;!-- Education --&gt;
+Bachelor of Computer Programming
+Farmingdale State College
+GPA 3.9; Aug 2019 - May 2021
+Founder of Tech Club
+Associate of Business Management
+Nassau Community College
+GPA 3.6; Aug 2017 - May 2019
+Dean&#x27;s List, Cum Laude
+&lt;!-- Experience --&gt;
+Web Development Instructor
+Nucamp, New York NY (July 2020 - Present)
+Guide students in learning frontend web development.
+Web Developer / Designer
+Probe Point Media, Farmingdale NY (Nov 2019 - April 2020 (COVID-19))
+Collaborate with developers and designers to create client sites
+Sales Specialist
+Casper Sleep, Huntington NY (Nov 2017 - Sept 2019)
+Communicate with customers to generate high-ticket sales</p>
+    </section>
+    <section>
+        <h2>education</h2>
+        <p>--&gt;
+Bachelor of Computer Programming
+Farmingdale State College
+GPA 3.9; Aug 2019 - May 2021
+Founder of Tech Club
+Associate of Business Management
+Nassau Community College
+GPA 3.6; Aug 2017 - May 2019
+Dean&#x27;s List, Cum Laude
+&lt;!-- Experience --&gt;
+Web Development Instructor
+Nucamp, New York NY (July 2020 - Present)
+Guide students in learning frontend web development.
+Web Developer / Designer
+Probe Point Media, Farmingdale NY (Nov 2019 - April 2020 (COVID-19))
+Collaborate with developers and designers to create client sites
+Sales Specialist
+Casper Sleep, Huntington NY (Nov 2017 - Sept 2019)
+Communicate with customers to generate high-ticket sales</p>
+    </section>
+    <section>
+        <h2>experience</h2>
+        <p>--&gt;
+Web Development Instructor
+Nucamp, New York NY (July 2020 - Present)
+Guide students in learning frontend web development.
+Web Developer / Designer
+Probe Point Media, Farmingdale NY (Nov 2019 - April 2020 (COVID-19))
+Collaborate with developers and designers to create client sites
+Sales Specialist
+Casper Sleep, Huntington NY (Nov 2017 - Sept 2019)
+Communicate with customers to generate high-ticket sales</p>
+    </section>
+</body>
+</html>
