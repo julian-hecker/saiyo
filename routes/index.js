@@ -1,5 +1,7 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+
+const upload = require('express-fileupload');
 
 router.get('/', function (req, res, next) {
     return res.render('index');
@@ -9,10 +11,21 @@ router.get('/upload', (req, res) => {
     return res.render('upload');
 });
 
-router.post('/form', (req, res) => {
-    console.log('reee');
-    res.end();
+router.post('/upload', upload({useTempFiles: true, tempFileDir: '../temp'}), (req, res) => {
+    // https://www.npmjs.com/package/express-fileupload
+    console.log(req.files.resume);
+
+
+
+    return res.render('verify');
 });
+
+// render verify with details from analzed form
+router.post('/verify', (req, res) => {
+    res.render('verify', {});
+});
+
+// post with query params, render select
 
 router.get('/preview/:template', (req, res) => {
     const template = 'template' + req.params.template;
@@ -21,7 +34,10 @@ router.get('/preview/:template', (req, res) => {
 
 router.get('/download/:template', (req, res) => {
     const template = 'template' + req.params.template;
-    return res.download(compileResume(template, { title: 'reee' }), 'index.html');
+    return res.download(
+        compileResume(template, { title: 'reee' }),
+        'index.html',
+    );
 });
 
 function compileResume(template, data) {
@@ -29,7 +45,10 @@ function compileResume(template, data) {
     const fs = require('fs');
     const path = require('path');
 
-    const templateUrl = path.join(__dirname, `../views/${template}.hbs`);
+    const templateUrl = path.join(
+        __dirname,
+        `../views/${template}.hbs`,
+    );
     const templateFile = fs.readFileSync(templateUrl, {
         encoding: 'utf-8',
         flag: 'r',
