@@ -26,9 +26,8 @@ router.post('/upload', upload(), (req, res) => {
         resume
             .parseToJSON()
             .then((data) => {
-                console.log(data.parts);
-                return res.json(data.parts);
-                // return res.render('verify', data.parts);
+                // return res.json(data.parts);
+                return res.render('verify', { data: data.parts });
             })
             .catch((error) => {
                 console.log(error);
@@ -38,6 +37,11 @@ router.post('/upload', upload(), (req, res) => {
 });
 
 // post with query params, render select
+router.post('/verify', (req, res) => {
+    console.log(req.query, req.body, req.params);
+    return res.render('select');
+})
+
 
 router.get('/preview/:template', (req, res) => {
     const template = 'template' + req.params.template;

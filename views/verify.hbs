@@ -1,37 +1,21 @@
 <div class="form-page">
 
-<section class="form-2">
-    <h2>Verify Your Information</h2>
-    <progress id="step" value="2" max="3">3/3</progress>
-    <p>Please make any required corrections to the data we have extracted from your resume.</p>
-    <p>This is the information that will go in your web page!</p>
-</section>
-<div id="personalinfo">
-    <h3>Personal Information</h3><br />
-    <p>Name:</p><form><input type="text"></form><br />
-    <p>Email:</p><form><input type="text"></form><br />
-    <p>Phone Number:</p><form><input type="text"></form><br />
+    <section class="form-2">
+        <h2>Verify Your Information</h2>
+        <progress id="step" value="2" max="3">2/3</progress>
+        <p>Please make any required corrections to the data we have extracted from your resume.</p>
+        <p>This is the information that will go in your web page!</p>
+    </section>
 
-</div>
-<div class="resumedatadisplay">
-    <div class="informationbox">
-        <h3>Experience</h3>
-       <form><input type="text" class="informationboxform" value="aaaaaaaaaaa"></form><br />
-    </div>
-    <div class="informationbox">
-        <h3>Education</h3>
-        <form><input type="text" class="informationboxform"></form><br />
-    </div>
-</div>
-<div class="resumedatadisplay">
-    <div class="informationbox">
-        <h3>Experience</h3>
-        <form><input type="text" class="informationboxform"></form><br />
-    </div>
-    <div class="informationbox">
-        <h3>Skills</h3>
-        <form><input type="text" class="informationboxform"></form><br />
-    </div>
-</div>
+    <form class="verify-form" action="/verify" method="POST">
+
+        {{#each data}}
+        <div class="verify-form-section">
+            <strong><label for="{{@key}}-input">{{@key}}</label></strong>
+            <textarea id="{{@key}}-input" type="text" class="verify-form-input">{{this}}</textarea>
+        </div>
+        {{/each}}
+        <input class="verify-confirm" type="submit" value="Generate Website!">
+    </form>
 
 </div>

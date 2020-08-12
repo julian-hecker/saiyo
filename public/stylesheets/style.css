@@ -170,6 +170,9 @@ body {
     color: white;
     font-size: 1.5em;
 }
+
+
+
 #personalinfo{
     margin-top: 1vh;
     background-color: white;
@@ -178,14 +181,9 @@ body {
 }
 .resumedatadisplay{
     margin-top: 1vh;
-    
-    
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    
-    
-    
     
 }
 #personalinfo p{
@@ -207,6 +205,10 @@ body {
     justify-content: center;
     
 }
+
+
+
+
 .form-page section {
     padding: 2em;
     background-color: white;
@@ -220,6 +222,12 @@ body {
 
 .form-page h2 {
     font-size: 2em;
+}
+
+@media (max-width: 900px) {
+    .form-page section {
+        font-size: 0.75em;
+    }
 }
 
 #resume-submit,
@@ -241,4 +249,40 @@ body {
 
 #resume-input:invalid {
     background-color: rgba(255, 0, 0, 0.1);
+}
+
+.verify-form {
+    margin-top: 2em;
+    padding: 2em;
+    background-color: white;
+    color: black;
+}
+
+.verify-form > * + * {
+    margin-top: 1rem;
+}
+
+.verify-form-section {}
+
+.verify-form-section label {
+    display: block;
+    margin-bottom: 0.25em;
+    text-transform: capitalize;
+}
+
+.verify-form-input {
+    display: block;
+    width: 100%;
+    min-height: 7rem;
+    padding: 0.5rem 0.5rem;
+    resize: vertical;
+}
+
+.verify-confirm {
+    display: block;
+    padding: 0.5em;
+    background-color: rgba(0, 212, 255, 1);
+    border: none;
+    color: white;
+    font-size: 1.5em;
 }
