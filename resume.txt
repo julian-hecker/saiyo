@@ -1,0 +1,130 @@
+
+
+Nucamp Instructor Class Delivery Checklist 
+Updated May 30th, 2020 
+ 
+Support to students during the week 
+1. Engage proactively with students during the week. Offer your help, don’t just wait for 
+requests. Reach out via email and slack (Nucamp will provide email & slack templates). 
+2. Manage your support time - Think of what times are the best for you to help students. 
+Download the Slack & Moodle apps on your phone, if you ride public transportation or want 
+to work on the go. Offer some regular ‘Office hours’ if this works best for you. 
+3. Check daily progress of your students using the activity completion report in Learn 
+4. Check the daily Nucamp instructor emails and carry out the recommended activities 
+5. Make sure to grade your students’ assignments within 48h of submission 
+You are expected to spend about 1h per day on your Nucamp activities outside of Saturdays. 
+Days before the Workshop 
+1. Bring 2 power strips for students to plug their laptops 
+2. Prior to class, update the Powerpoint slides provided in the Instructor Content for each 
+workshop with relevant information for your class. (For example, in Week 0, add your own 
+photo and information about you). 
+3. Briefly rehearse how to deliver the presentation 
+4. Complete the course yourself before the class material is accessible to students on Monday 
+so you can answer their specific questions during the week. 
+5. Make sure to complete the workshop assignment yourself before Saturday - the worst 
+situation for an instructor is to have students realize you haven’t done the assignment 
+yourself or you are not prepared. This systematically leads to poor ratings from students. 
+6. Have some extra assignments ready in case students finish early - for example, code 
+challenges and extra resources from the week's lessons 
+Before the Workshop begins (In-Person) 
+1. Bring the Nucamp sign and place it outside the workshop class / location if appropriate 
+2. Be at the workshop location at least 15 minutes before the class starts and logon to 
+learn.nucamp.co to let the Nucamp Operations Center know you are present and that Wifi is 
+working at the location. 
+3. Setup Tables & Decide if you are going to lecture sitting or standing, and in which direction 
+you will speak to make sure you are heard while not interfering with other classes (if any) 
+4. Invite your students to sit comfortably while allowing everyone to find their seat. Make sure 
+they sit in groups so they can work as teams. Do not allow students to sit alone. 
+5. Have the specific workshop presentation ready 
+6. Make sure all your students are present before starting - put a sign with your phone number 
+on the entrance door for late arrivals 
+Always keep your phone on and keep your slack open so you can be reached by students or 
+Nucamp. 
+
+Before the Workshop begins (in Videoconference) 
+1. Make sure you are setup in a quiet room, in a professional setting, with no other person 
+around you. Make sure people around you know you are working and should not be 
+interrupted.  
+2. Logon to learn.nucamp.co 15 minutes before the class starts to signal to Nucamp 
+Operations Center that you are present, and your connection is working 
+3. Test your camera, headphones and microphone in Zoom. Make sure your face is well 
+framed in the video and well lit. 
+4. Have the specific workshop presentation ready to share 
+5. Open the online meeting using the host link and credentials available in your instructor 
+profile at nucamp.co/instructor (Do not the student link or your own credentials).   
+6. Greet students as they join. Make sure everyone has their camera turned-on & mic working. 
+7. Make sure all your students are present before starting – Make a roll call 
+Always keep your phone on and keep your slack open so you can be reached by students or 
+Nucamp. 
+At the start of the Workshop 
+First Workshop 
+1. Be personal. Introduce yourself and explain why you are here 
+2. Make sure you tell the students that “you don't know everything, but are confident that you 
+will help them find the answer” (don't set yourself up for failure by raising your own 
+expectations too high) 
+3. Go through the specific 1
+st
+ workshop sequence of introductions. 
+Every Workshop 
+1. Tone - Your initial conversation will set the tone for the entire class. Make sure you are 
+engaging. Remind them why they are here, get them excited about the course to come, 
+and/or about the progress they've already made. 
+2. Ask the students to give a quick update on their week and any topic / issue they want to 
+cover in the lecture part 
+3. Explain the objective of the day 
+During the Workshop Lecture Part (~45mn) 
+1. 'Lecture' part: Go through the week's lessons one by one and make sure students have 
+understood the key concepts. Do not rush through the slides or simply read them. Take 
+the time to check that the students have understood the concept before moving on. 
+2. Pick a few important concepts and share your screen as you write the code of one of the 
+exercise demonstrating the concept  
+3. Make sure to answer all Student questions before moving to the workshop first activity. 
+During the Workshop Assignment Part (~3h) 
+1. Time management - time management - time management! Make sure you are staying on 
+the workshop schedule for each activity 
+2. Make sure they have all read the instructions 
+
+3. Group them in groups of 2-3 students at the start of the first activity - try to balance groups 
+with at least 1 stronger and 1 weaker student in the same group. Videoconference: create 
+breakout rooms as needed to allow groups to work together without disturbing others. 
+4. Every 10-15mn walk the room and watch your students' progress while they work. 
+Videoconference: If you’ve created breakout rooms, make sure to tour the rooms every 
+15mn at the most. 
+5. Ask students to share their screen and review their work, moving from one student to 
+another every 5mn (10mn maximum) (in-person or in videoconference) 
+6. Share your time between students in a fair way. Don't spend too much time on one problem 
+and/or with one student. Offer a direction to the student (try this / search online for this) 
+rather than explaining at length. Move-on to other students and circle back later. 
+7. Help students who fall behind the group first, share the code they need to write if needed 
+8. Some students will regularly not be prepared for class and expect to work only on 
+Saturdays. You have limited time, so prioritize students who come to class prepared. 
+9. Move to the next activity on schedule - share the code for the current section if needed to 
+stay on schedule 
+10. Don't dismiss the workshop early if students are done with the assignment - use the extra 
+time to review code challenges and extra assignments 
+11. Always be engaged with students! Online: Make sure to keep talking to students. 
+Long silences kill classroom momentum when online (much more than in-person) 
+Don'ts during the workshop 
+1. Do not text, email or browse the internet for personal matters! Keep your private 
+communications & activities outside of your workshop time. Be professional. 
+2. Don't stay seated waiting too long / walk the in-person or virtual room 
+3. Don't change the workshop flow, agenda or objective 
+4. Don't introduce new concepts or technology stacks 
+5. Do not record the workshop for students who are absent 
+At the end of the workshop (Save 10mn for this) 
+1. Wrap-up on the objective of the day - Be positive on what they've learned today 
+2. Make sure they have uploaded their assignment (unless they still need to work on it). Make 
+sure they press 'submit' after 'save' so that their assignment is not just saved in draft mode. 
+3. If they have not completed their assignment - make it clear they need to do so by the end of 
+the day. Be firm on this. 
+In person workshops: 
+4. Clean-up the working space you have used / put back furniture the way it was set before 
+your arrival - don't forget your power plugs or Nucamp sign! 
+5. Make sure all students have left the building before leaving yourself - explain it's our 
+security policy if needed 
+After the workshop 
+1. Remind your students to submit their assignment if they haven't done it at the workshop 
+2. Post the assignments of students in the Learn Assignment section to share with the class 
+3. Grade the assignments by Tuesday 
+4. Share the assignments by Wednesday - see specific video in your instructor course for 
+guidelines on grading & sharing 

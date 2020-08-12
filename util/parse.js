@@ -1,16 +1,17 @@
 const fs = require('fs');
 const pdf = require('pdf-parse');
 const ResumeParser = require('simple-resume-parser');
-const resume = new ResumeParser('./joshu.txt');
-function returnJSON(){
-// read PDF file
-let dataBuffer = fs.readFileSync('./Scott_Simko_Resume.pdf');
+const resume = new ResumeParser('../temp/resume.txt');
 
+function parseResume(buffer) {
+  console.log('=======PARSING RESUME======');
+  console.log(buffer);
+  
 // write text from PDF to .txt file
-pdf(dataBuffer).then(function (data) {
-  let temp = data.text;
+  pdf(buffer).then(function (data) {
+    console.log(Object.entries(data))
 
-  fs.writeFile('./joshu.txt', data.text, () => {
+  fs.writeFileSync('../temp/resume.txt', data.text, () => {
     console.log('file written');
   });
 
@@ -26,7 +27,10 @@ pdf(dataBuffer).then(function (data) {
     return data;
   });
 }
-module.exports = returnJSON;
+module.exports = parseResume;
+
+
+
   // // number of pages
   // console.log(data.numpages);
   // // number of rendered pages

@@ -3,7 +3,7 @@ const router = express.Router();
 
 const upload = require('express-fileupload');
 
-var JSONobj = require('../util/parse.js')
+var parseResume = require('../util/parse.js')
 
 router.get('/', function (req, res, next) {
     return res.render('index');
@@ -13,11 +13,10 @@ router.get('/upload', (req, res) => {
     return res.render('upload');
 });
 
-router.post('/upload', upload({useTempFiles: true, tempFileDir: '../temp'}), (req, res) => {
+router.post('/upload', upload(), (req, res) => {
     // https://www.npmjs.com/package/express-fileupload
-    console.log(req.files.resume);
 
-
+    parseResume(req.files.resume);
 
     return res.render('verify');
 });
